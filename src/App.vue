@@ -215,6 +215,7 @@ import ProjectCard from './components/ProjectCard.vue'
 import ContactForm from './components/ContactForm.vue'
 import ModelViewer from './components/ModelViewer.vue'
 
+const baseUrl = import.meta.env.BASE_URL
 const scrolly = ref(0)
 const handleScroll = () => {
   scrolly.value = window.scrollY
@@ -333,11 +334,11 @@ const projects = [
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-              url('/images/StylizedPerth.png') center/cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1;
 }
-
 .hero-content {
   color: white;
 }

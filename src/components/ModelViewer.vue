@@ -42,7 +42,7 @@ onMounted(() => {
   scene.add(group)
 
   const loader = new GLTFLoader()
-  loader.load('/building/building.glb', (gltf) => {
+  loader.load(`${import.meta.env.BASE_URL}building/building.glb`, (gltf) => {
     const model = gltf.scene
 
     // Calculate bounding box to center and scale the model automatically
