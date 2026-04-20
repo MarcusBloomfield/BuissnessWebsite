@@ -48,6 +48,17 @@
       </div>
     </section>
 
+    <!-- Spatial Concept Section -->
+    <section id="spatial-concept" class="spatial-section">
+      <div class="container">
+        <div class="section-header centered">
+          <h2 class="section-title">Spatial Concept</h2>
+          <p>An interactive exploration of our core geometric principles.</p>
+        </div>
+        <ModelViewer />
+      </div>
+    </section>
+
     <!-- Difference Section -->
     <section id="difference" class="difference-section">
       <div class="container">
@@ -202,6 +213,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import ProjectCard from './components/ProjectCard.vue'
 import ContactForm from './components/ContactForm.vue'
+import ModelViewer from './components/ModelViewer.vue'
 
 const scrolly = ref(0)
 const handleScroll = () => {
@@ -414,6 +426,12 @@ const projects = [
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* Spatial Concept Section */
+.spatial-section {
+  padding: 120px 5%;
+  background-color: white;
 }
 
 /* Difference Section */
