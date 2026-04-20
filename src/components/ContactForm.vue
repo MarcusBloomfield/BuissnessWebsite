@@ -70,7 +70,7 @@ const form = reactive({
 })
 
 const isEmailOptionsOpen = ref(false)
-const emailRecipient = 'marcusbloomfield3@gmail.com'
+const emailRecipient = 'info@apexarch.com.au'
 
 const emailSubject = computed(() => `New Enquiry: ${form.subject} - ${form.name}`)
 const emailBody = computed(() => `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`)
