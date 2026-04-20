@@ -15,7 +15,7 @@
 
     <!-- Hero Section -->
     <header class="hero">
-      <div class="hero-image-placeholder"></div>
+      <div class="hero-image-placeholder" :style="{ backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${baseUrl}images/StylizedPerth.png)` }"></div>
       <div class="hero-content container animate-up">
         <h1>Sculpting Space.<br>Defining Life.</h1>
         <p>Award-winning Perth architectural studio focused on minimalist, sustainable, and human-centric design.</p>
