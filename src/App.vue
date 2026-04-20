@@ -666,4 +666,36 @@ const projects = [
   color: var(--accent-color);
   opacity: 1;
 }
+
+@media (max-width: 576px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .projects-grid,
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  section, .spatial-section, .difference-section, .footer {
+    padding: 60px 5%;
+  }
+}
 </style>
